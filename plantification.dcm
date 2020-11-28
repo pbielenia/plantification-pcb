@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IRLIZ44N
+D 17A Id, 55V Vds, 22mOhm Rds, N-Channel HEXFET Power MOSFET, TO-251AA, IPAK
+K N-Channel HEXFET MOSFET Logic-Level
+F http://www.irf.com/product-info/datasheets/data/irliz44n.pdf
+$ENDCMP
+#
+#End Doc Library
