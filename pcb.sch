@@ -660,7 +660,7 @@ FAN_1_OUT
 Text Label 11600 2800 0    50   ~ 0
 12VDC
 Text Label 11600 2900 0    50   ~ 0
-FAN_1_RPMa
+FAN_1_RPM
 Text Label 14350 3250 0    50   ~ 0
 230VAC_L
 Text Label 14350 3350 0    50   ~ 0
@@ -674,9 +674,9 @@ Text Label 11600 3700 0    50   ~ 0
 Text Label 11600 3600 0    50   ~ 0
 FAN_3_OUT
 Text Label 11600 3350 0    50   ~ 0
-FAN_2_RPMa
+FAN_2_RPM
 Text Label 11600 3800 0    50   ~ 0
-FAN_3_RPMa
+FAN_3_RPM
 Text Label 12850 2900 0    50   ~ 0
 3.3V
 Text Label 12850 3350 0    50   ~ 0
@@ -713,17 +713,6 @@ Wire Wire Line
 	3200 3050 4400 3050
 Wire Wire Line
 	3200 3250 4400 3250
-$Comp
-L Connector_Generic:Conn_01x02 J13
-U 1 1 5FD232CF
-P 12300 4350
-F 0 "J13" H 12380 4342 50  0000 L CNN
-F 1 "Conn_01x02" H 12380 4251 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 12300 4350 50  0001 C CNN
-F 3 "~" H 12300 4350 50  0001 C CNN
-	1    12300 4350
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 5FD55316
@@ -808,52 +797,6 @@ Wire Wire Line
 	14350 3250 14850 3250
 Wire Wire Line
 	14350 3350 14850 3350
-Text Label 11600 4350 0    50   ~ 0
-FAN_1_RPMa
-Text Label 11600 4450 0    50   ~ 0
-FAN_1_RPM
-Wire Wire Line
-	11600 4350 12100 4350
-Wire Wire Line
-	11600 4450 12100 4450
-$Comp
-L Connector_Generic:Conn_01x02 J14
-U 1 1 5FF3F3E5
-P 13700 4350
-F 0 "J14" H 13780 4342 50  0000 L CNN
-F 1 "Conn_01x02" H 13780 4251 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 13700 4350 50  0001 C CNN
-F 3 "~" H 13700 4350 50  0001 C CNN
-	1    13700 4350
-	1    0    0    -1  
-$EndComp
-Text Label 13000 4350 0    50   ~ 0
-FAN_2_RPMa
-Text Label 13000 4450 0    50   ~ 0
-FAN_2_RPM
-Wire Wire Line
-	13000 4350 13500 4350
-Wire Wire Line
-	13000 4450 13500 4450
-$Comp
-L Connector_Generic:Conn_01x02 J15
-U 1 1 5FF44AFB
-P 15050 4350
-F 0 "J15" H 15130 4342 50  0000 L CNN
-F 1 "Conn_01x02" H 15130 4251 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 15050 4350 50  0001 C CNN
-F 3 "~" H 15050 4350 50  0001 C CNN
-	1    15050 4350
-	1    0    0    -1  
-$EndComp
-Text Label 14350 4350 0    50   ~ 0
-FAN_3_RPMa
-Text Label 14350 4450 0    50   ~ 0
-FAN_3_RPM
-Wire Wire Line
-	14350 4350 14850 4350
-Wire Wire Line
-	14350 4450 14850 4450
 $Comp
 L plantification:IRLIZ44N Q4
 U 1 1 5FF58F9B
@@ -1033,12 +976,10 @@ Wire Wire Line
 	14000 6450 14000 6300
 Connection ~ 14000 6450
 Wire Wire Line
-	14000 6300 14500 6300
-Wire Wire Line
 	14000 6900 14500 6900
 Text Label 14500 6900 2    50   ~ 0
 LIGHTS_L
-Text Label 14500 6300 2    50   ~ 0
+Text Label 15200 6300 2    50   ~ 0
 230VAC_L
 Text Label 13650 5900 2    50   ~ 0
 LIGHTS_N
@@ -1046,4 +987,19 @@ Text Label 12700 5900 0    50   ~ 0
 230VAC_N
 Wire Wire Line
 	12700 5900 13650 5900
+$Comp
+L Device:Fuse F1
+U 1 1 5FCC3312
+P 14250 6300
+F 0 "F1" V 14053 6300 50  0000 C CNN
+F 1 "1A" V 14144 6300 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" V 14180 6300 50  0001 C CNN
+F 3 "~" H 14250 6300 50  0001 C CNN
+	1    14250 6300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14000 6300 14100 6300
+Wire Wire Line
+	14400 6300 15200 6300
 $EndSCHEMATC
