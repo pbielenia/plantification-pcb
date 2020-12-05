@@ -62,148 +62,148 @@ P3V3
 $Comp
 L Connector_Generic:Conn_02x02_Odd_Even J5
 U 1 1 58E13683
-P 6050 4600
-F 0 "J5" H 6050 4750 50  0000 C CNN
-F 1 "CONN_02X02" H 6050 4450 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 6050 3400 50  0001 C CNN
-F 3 "" H 6050 3400 50  0000 C CNN
-	1    6050 4600
+P 6200 4600
+F 0 "J5" H 6200 4750 50  0000 C CNN
+F 1 "CONN_02X02" H 6200 4450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 6200 3400 50  0001 C CNN
+F 3 "" H 6200 3400 50  0000 C CNN
+	1    6200 4600
 	1    0    0    -1  
 $EndComp
-Text Label 5250 4600 0    60   ~ 0
+Text Label 5400 4600 0    60   ~ 0
 P3V3
-Text Label 5250 4700 0    60   ~ 0
+Text Label 5400 4700 0    60   ~ 0
 P5V
 Wire Wire Line
-	5250 4600 5750 4600
+	5400 4600 5900 4600
 Wire Wire Line
-	5250 4700 5750 4700
-Text Label 6950 4600 2    60   ~ 0
+	5400 4700 5900 4700
+Text Label 7100 4600 2    60   ~ 0
 P3V3_HAT
-Text Label 6950 4700 2    60   ~ 0
+Text Label 7100 4700 2    60   ~ 0
 P5V_HAT
 Wire Wire Line
-	6350 4600 6400 4600
+	6500 4600 6550 4600
 Wire Wire Line
-	6350 4700 6400 4700
-Text Notes 5450 4250 0    60   ~ 0
+	6500 4700 6550 4700
+Text Notes 5600 4250 0    60   ~ 0
 FLEXIBLE POWER SELECTION
-Text Label 7150 2400 2    60   ~ 0
+Text Label 7300 2400 2    60   ~ 0
 P5V_HAT
 Wire Wire Line
-	6400 2400 6550 2400
-Text Label 5300 2400 0    60   ~ 0
+	6550 2400 6700 2400
+Text Label 5450 2400 0    60   ~ 0
 P5V
 Wire Wire Line
-	5300 2400 5750 2400
-Text Notes 5150 1750 0    118  ~ 24
+	5450 2400 5900 2400
+Text Notes 5300 1750 0    118  ~ 24
 5V Powered HAT Protection
-Text Notes 4900 2050 0    60   ~ 0
+Text Notes 5050 2050 0    60   ~ 0
 This is the recommended 5V rail protection for \na HAT with power going to the Pi.\nSee https://github.com/raspberrypi/hats/blob/master/designguide.md#back-powering-the-pi-via-the-j8-gpio-header
 $Comp
 L raspberrypi_hat:DMG2305UX Q1
 U 1 1 58E14EB1
-P 6150 2400
-F 0 "Q1" V 6300 2550 50  0000 R CNN
-F 1 "DMG2305UX" V 6300 2350 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6350 2500 50  0001 C CNN
-F 3 "" H 6150 2400 50  0000 C CNN
-	1    6150 2400
+P 6300 2400
+F 0 "Q1" V 6450 2550 50  0000 R CNN
+F 1 "DMG2305UX" V 6450 2350 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6500 2500 50  0001 C CNN
+F 3 "" H 6300 2400 50  0000 C CNN
+	1    6300 2400
 	0    -1   -1   0   
 $EndComp
 $Comp
 L raspberrypi_hat:DMMT5401 Q2
 U 1 1 58E1538B
-P 5850 3000
-F 0 "Q2" H 6050 3075 50  0000 L CNN
-F 1 "DMMT5401" H 6050 3000 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6050 2925 50  0000 L CIN
-F 3 "" H 5850 3000 50  0000 L CNN
-	1    5850 3000
+P 6000 3000
+F 0 "Q2" H 6200 3075 50  0000 L CNN
+F 1 "DMMT5401" H 6200 3000 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6200 2925 50  0000 L CIN
+F 3 "" H 6000 3000 50  0000 L CNN
+	1    6000 3000
 	-1   0    0    1   
 $EndComp
 $Comp
 L raspberrypi_hat:DMMT5401 Q2
 U 2 1 58E153D6
-P 6450 3000
-F 0 "Q2" H 6650 3075 50  0000 L CNN
-F 1 "DMMT5401" H 6650 3000 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6650 2925 50  0000 L CIN
-F 3 "" H 6450 3000 50  0000 L CNN
-	2    6450 3000
+P 6600 3000
+F 0 "Q2" H 6800 3075 50  0000 L CNN
+F 1 "DMMT5401" H 6800 3000 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6800 2925 50  0000 L CIN
+F 3 "" H 6600 3000 50  0000 L CNN
+	2    6600 3000
 	1    0    0    1   
 $EndComp
 $Comp
 L Device:R R23
 U 1 1 58E15896
-P 5750 3600
-F 0 "R23" V 5830 3600 50  0000 C CNN
-F 1 "10K" V 5750 3600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.84x1.00mm_HandSolder" V 5680 3600 50  0001 C CNN
-F 3 "" H 5750 3600 50  0001 C CNN
-	1    5750 3600
+P 5900 3600
+F 0 "R23" V 5980 3600 50  0000 C CNN
+F 1 "10K" V 5900 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.84x1.00mm_HandSolder" V 5830 3600 50  0001 C CNN
+F 3 "" H 5900 3600 50  0001 C CNN
+	1    5900 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R24
 U 1 1 58E158A1
-P 6550 3600
-F 0 "R24" V 6630 3600 50  0000 C CNN
-F 1 "47K" V 6550 3600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.84x1.00mm_HandSolder" V 6480 3600 50  0001 C CNN
-F 3 "" H 6550 3600 50  0001 C CNN
-	1    6550 3600
+P 6700 3600
+F 0 "R24" V 6780 3600 50  0000 C CNN
+F 1 "47K" V 6700 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.84x1.00mm_HandSolder" V 6630 3600 50  0001 C CNN
+F 3 "" H 6700 3600 50  0001 C CNN
+	1    6700 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR01
 U 1 1 58E15A41
-P 5750 3800
-F 0 "#PWR01" H 5750 3550 50  0001 C CNN
-F 1 "GND" H 5750 3650 50  0000 C CNN
-F 2 "" H 5750 3800 50  0000 C CNN
-F 3 "" H 5750 3800 50  0000 C CNN
-	1    5750 3800
+P 5900 3800
+F 0 "#PWR01" H 5900 3550 50  0001 C CNN
+F 1 "GND" H 5900 3650 50  0000 C CNN
+F 2 "" H 5900 3800 50  0000 C CNN
+F 3 "" H 5900 3800 50  0000 C CNN
+	1    5900 3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 58E15A9E
-P 6550 3800
-F 0 "#PWR02" H 6550 3550 50  0001 C CNN
-F 1 "GND" H 6550 3650 50  0000 C CNN
-F 2 "" H 6550 3800 50  0000 C CNN
-F 3 "" H 6550 3800 50  0000 C CNN
-	1    6550 3800
+P 6700 3800
+F 0 "#PWR02" H 6700 3550 50  0001 C CNN
+F 1 "GND" H 6700 3650 50  0000 C CNN
+F 2 "" H 6700 3800 50  0000 C CNN
+F 3 "" H 6700 3800 50  0000 C CNN
+	1    6700 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5750 3800 5750 3750
+	5900 3800 5900 3750
 Wire Wire Line
-	6550 3800 6550 3750
+	6700 3800 6700 3750
 Wire Wire Line
-	6550 3200 6550 3300
+	6700 3200 6700 3300
 Wire Wire Line
-	6150 2650 6150 3300
+	6300 2650 6300 3300
 Wire Wire Line
-	6150 3300 6550 3300
-Connection ~ 6550 3300
+	6300 3300 6700 3300
+Connection ~ 6700 3300
 Wire Wire Line
-	5750 3200 5750 3350
+	5900 3200 5900 3350
 Wire Wire Line
-	6050 3000 6050 3350
+	6200 3000 6200 3350
 Wire Wire Line
-	5750 3350 6050 3350
-Connection ~ 5750 3350
+	5900 3350 6200 3350
+Connection ~ 5900 3350
 Wire Wire Line
-	6250 3350 6250 3000
-Connection ~ 6050 3350
+	6400 3350 6400 3000
+Connection ~ 6200 3350
 Wire Wire Line
-	5750 2800 5750 2400
-Connection ~ 5750 2400
+	5900 2800 5900 2400
+Connection ~ 5900 2400
 Wire Wire Line
-	6550 2800 6550 2400
-Connection ~ 6550 2400
+	6700 2800 6700 2400
+Connection ~ 6700 2400
 $Comp
 L raspberrypi_hat:CAT24C32 U2
 U 1 1 58E1713F
@@ -336,45 +336,45 @@ EEPROM WRITE ENABLE
 $Comp
 L Device:R R7
 U 1 1 58E22085
-P 6100 4300
-F 0 "R7" V 6180 4300 50  0000 C CNN
-F 1 "DNP" V 6100 4300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.84x1.00mm_HandSolder" V 6030 4300 50  0001 C CNN
-F 3 "" H 6100 4300 50  0001 C CNN
-	1    6100 4300
+P 6250 4300
+F 0 "R7" V 6330 4300 50  0000 C CNN
+F 1 "DNP" V 6250 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.84x1.00mm_HandSolder" V 6180 4300 50  0001 C CNN
+F 3 "" H 6250 4300 50  0001 C CNN
+	1    6250 4300
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R9
 U 1 1 58E2218F
-P 6100 4950
-F 0 "R9" V 6180 4950 50  0000 C CNN
-F 1 "DNP" V 6100 4950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.84x1.00mm_HandSolder" V 6030 4950 50  0001 C CNN
-F 3 "" H 6100 4950 50  0001 C CNN
-	1    6100 4950
+P 6250 4950
+F 0 "R9" V 6330 4950 50  0000 C CNN
+F 1 "DNP" V 6250 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.84x1.00mm_HandSolder" V 6180 4950 50  0001 C CNN
+F 3 "" H 6250 4950 50  0001 C CNN
+	1    6250 4950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5750 4700 5750 4950
+	5900 4700 5900 4950
 Wire Wire Line
-	5750 4950 5950 4950
-Connection ~ 5750 4700
+	5900 4950 6100 4950
+Connection ~ 5900 4700
 Wire Wire Line
-	6250 4950 6400 4950
+	6400 4950 6550 4950
 Wire Wire Line
-	6400 4950 6400 4700
-Connection ~ 6400 4700
+	6550 4950 6550 4700
+Connection ~ 6550 4700
 Wire Wire Line
-	6400 4600 6400 4300
+	6550 4600 6550 4300
 Wire Wire Line
-	6400 4300 6250 4300
-Connection ~ 6400 4600
+	6550 4300 6400 4300
+Connection ~ 6550 4600
 Wire Wire Line
-	5950 4300 5750 4300
+	6100 4300 5900 4300
 Wire Wire Line
-	5750 4300 5750 4600
-Connection ~ 5750 4600
+	5900 4300 5900 4600
+Connection ~ 5900 4600
 $Comp
 L Device:R R11
 U 1 1 58E22900
@@ -448,7 +448,7 @@ Wire Wire Line
 	3200 2250 4400 2250
 Wire Wire Line
 	2700 7650 2700 7400
-Text Notes 7150 4950 0    60   ~ 0
+Text Notes 7300 4950 0    60   ~ 0
 HAT spec indicates to NEVER\npower the 3.3V pins on the Raspberry Pi \nfrom the HAT header. Only connect the 3.3V\npower from the Pi if the HAT does not have\n3.3V on board.\n\nIF you are designing a board that could\neither be powered by the Pi or from the HAT\nthe jumpers here can be used.\n\nIn most cases, either design the HAT \nto provide the 5V to the Pi and use the\nprotection circuit above OR power the\nHAT from the Pi and directly connect\nthe P3V3 and P5V to the P3V3_HAT and P5V_HAT\npins.
 Text Notes 1200 5200 0    60   ~ 0
 The HAT spec requires this EEPROM with system information\nto be in place in order to be called a HAT. It should be set up as write\nprotected (WP pin held high), so it may be desirable to either put a \njumper as shown to enable writing, or to hook up a spare IO pin to do so.
@@ -493,15 +493,15 @@ Connection ~ 1050 6100
 Wire Wire Line
 	950  6000 1550 6000
 Wire Wire Line
-	6550 3300 6550 3450
+	6700 3300 6700 3450
 Wire Wire Line
-	5750 3350 5750 3450
+	5900 3350 5900 3450
 Wire Wire Line
-	6050 3350 6250 3350
+	6200 3350 6400 3350
 Wire Wire Line
-	5750 2400 5900 2400
+	5900 2400 6050 2400
 Wire Wire Line
-	6550 2400 7150 2400
+	6700 2400 7300 2400
 Wire Wire Line
 	2150 7650 2200 7650
 Wire Wire Line
@@ -511,13 +511,13 @@ Wire Wire Line
 Wire Wire Line
 	1300 5750 1300 5850
 Wire Wire Line
-	5750 4700 5850 4700
+	5900 4700 6000 4700
 Wire Wire Line
-	6400 4700 6950 4700
+	6550 4700 7100 4700
 Wire Wire Line
-	6400 4600 6950 4600
+	6550 4600 7100 4600
 Wire Wire Line
-	5750 4600 5850 4600
+	5900 4600 6000 4600
 Wire Wire Line
 	1300 5650 1600 5650
 Wire Wire Line
@@ -903,17 +903,6 @@ F 3 "https://www.onsemi.com/pub/Collateral/MOC3043M-D.pdf" H 13100 6550 50  0001
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R4
-U 1 1 5FCD0D80
-P 12600 6450
-F 0 "R4" V 12393 6450 50  0000 C CNN
-F 1 "400R" V 12484 6450 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 12530 6450 50  0001 C CNN
-F 3 "~" H 12600 6450 50  0001 C CNN
-	1    12600 6450
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:CP C1
 U 1 1 5FCD2BE2
 P 12300 6600
@@ -940,7 +929,7 @@ L Device:R R5
 U 1 1 5FCD7A14
 P 13650 6450
 F 0 "R5" V 13443 6450 50  0000 C CNN
-F 1 "400R" V 13534 6450 50  0000 C CNN
+F 1 "22R" V 13534 6450 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 13580 6450 50  0001 C CNN
 F 3 "~" H 13650 6450 50  0001 C CNN
 	1    13650 6450
@@ -952,13 +941,9 @@ Wire Wire Line
 	12450 6450 12300 6450
 Connection ~ 12300 6450
 Wire Wire Line
-	12300 6450 11800 6450
-Wire Wire Line
 	12800 6650 12800 6750
 Wire Wire Line
 	12800 6750 12300 6750
-Wire Wire Line
-	11800 6750 12300 6750
 Connection ~ 12300 6750
 Wire Wire Line
 	13500 6450 13400 6450
@@ -1002,4 +987,37 @@ Wire Wire Line
 	14000 6300 14100 6300
 Wire Wire Line
 	14400 6300 15200 6300
+$Comp
+L Device:R R4
+U 1 1 5FCD0D80
+P 12600 6450
+F 0 "R4" V 12393 6450 50  0000 C CNN
+F 1 "560R" V 12484 6450 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 12530 6450 50  0001 C CNN
+F 3 "~" H 12600 6450 50  0001 C CNN
+	1    12600 6450
+	0    1    1    0   
+$EndComp
+Text Label 800  4050 0    50   ~ 0
+DHT22_3_SIGNAL
+Text Label 800  3850 0    50   ~ 0
+DHT22_2_SIGNAL
+Text Label 800  3750 0    50   ~ 0
+DHT22_1_SIGNAL
+Text Label 4400 2950 2    50   ~ 0
+FAN_1_CONTROL
+Text Label 4400 3050 2    50   ~ 0
+FAN_2_CONTROL
+Text Label 4400 3250 2    50   ~ 0
+FAN_3_CONTROL
+Text Label 11600 6750 0    50   ~ 0
+GND
+Text Label 11600 6450 0    50   ~ 0
+LIGHTS_CONTROL
+Wire Wire Line
+	11600 6450 12300 6450
+Wire Wire Line
+	11600 6750 12300 6750
+Text Label 800  2950 0    50   ~ 0
+LIGHTS_CONTROL
 $EndSCHEMATC
